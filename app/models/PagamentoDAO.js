@@ -1,6 +1,5 @@
 function PagamentoDAO(connection){
-    this._connection = connection;
-    
+    this._connection = connection;    
 }
 
 PagamentoDAO.prototype.salva = function (pagamento, callback){

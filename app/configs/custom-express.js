@@ -8,7 +8,7 @@ module.exports = function(){
     app.use(bodyParser.json());    
     app.use(expressValidator());
 
-    consign({cwd:'app'}).include('controllers').then('models').then('server').into(app);
+    consign({cwd:'app'}).include('controllers').then('models').then('services').then('server').into(app);
 
     return app;
 }
